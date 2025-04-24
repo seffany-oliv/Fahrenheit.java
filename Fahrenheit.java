@@ -33,14 +33,27 @@ public class Fahrenheit {
 
             //Saída
             System.out.println("\n" + cel + "ºC =" + fah + "ºF\n");
+
         }else if(op == 2){
-            //Converter Fahrenheit para Celsius
+            System.out.println("Conversão para celsius");
+
+            //Entradas
+            System.out.println("Informe a temperatura em ºF: ");
+            fah = entrada.nextInt();
+
+            //Processamento
+            cel = (fah - 32) * 5 / 9;
+
+            //Saída
+            System.out.println("\n" + fah + "ºF =" + cel + "ºC\n");
+
         }else if(op == 3) {
             System.out.println("Forte abraço!!!");
             
         }else {
             System.out.println("Opção" + op + "incorreta!");
-        }
+
+        }while(op!=3);
         
     }
 }
